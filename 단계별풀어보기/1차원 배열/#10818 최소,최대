@@ -1,0 +1,14 @@
+a = int(input())
+n = list(map(int,input().split()))
+
+M = -1000000
+N = 1000000
+for i in range(a):
+    '''최댓값에는 제일 작은 숫자를 적고 최솟값에는 제일 큰 숫자를 넣어서 비교해보기'''
+    B= n[i]
+    if M < B:
+        M = B
+    if N > B:
+        N = B
+
+print(N,M)
