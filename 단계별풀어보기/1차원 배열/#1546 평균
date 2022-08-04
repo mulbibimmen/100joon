@@ -7,13 +7,13 @@ score = list(map(int,input().split()))
 
 
 M = 0
-result = []
 
 for i in range(rhkahr):
     b = score[i]
     if M < b:
         M = b
         
+result = []
 for i in score:
     result.append(i/M *100)
 
