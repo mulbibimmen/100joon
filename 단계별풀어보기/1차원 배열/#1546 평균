@@ -1,0 +1,21 @@
+from unittest import result
+
+
+rhkahr = int(input())
+
+score = list(map(int,input().split()))
+
+
+M = 0
+result = []
+
+for i in range(rhkahr):
+    b = score[i]
+    if M < b:
+        M = b
+        
+for i in score:
+    result.append(i/M *100)
+
+
+print(sum(result)/rhkahr)    
